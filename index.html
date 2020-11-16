@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Paises</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo" id="title">API paises</h1>
+        <i class="far fa-sun" id="lunaDark"></i><button class="modoDark" id="dark" data-boton="desactivado">Dark Mode</button>
+    </header>
+    <form name="form" class="form" id="form">
+        <i class="fas fa-search" id="buscarIcon"></i>
+        <input type="search" name="buscar" id="buscar" class="buscar__input" placeholder="Buscar por país">
+        <select name="region" id="region" class="region">
+            <option value="default">--Todas--</option>
+            <option value="Africa">África</option>
+            <option value="Americas">Ámerica</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceanía</option>
+        </select>
+        <input type="button" value="Grafico Regiones" id="grafico" class="grafico">
+        <div class="modal2" id="modal2">
+            <div class="modal2__content" id="modal__content2">
+                <canvas id="mychart" class="canvas" width="500px" height="500px">
+                </canvas>
+            </div>
+        </div>
+    </form>
+    <main>
+        <article class="countries" id="countries">
+        </article>
+        <div class="modal" id="modal">
+            <div class="modal__content" id="modalContent">
+                <img src="" alt="" id="imgModal">
+                <h2 id="tituloModal"></h2>
+                <p id="poblaModal"></p>
+                <p id="capitalModal"></p>
+                <p id="regionModal"></p>
+                <p id="monedaModal"></p>
+                <p id="borderModal"></p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/9dd8b341bf.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="ap.js"></script>
+</body>
+
+</html>
