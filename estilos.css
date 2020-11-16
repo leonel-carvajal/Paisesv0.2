@@ -21,6 +21,7 @@ body::-webkit-scrollbar-thumb {
 .countries {
     width: 350px;
     display: grid;
+    background-color: inherit;
     /* grid-template-columns: repeat(4,300px);
     gap: 10px; */
 }
@@ -125,7 +126,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .country {
-    background-color: #eee;
+    background-color: inherit;
+    border: 1px solid #000;
     text-align: center;
     padding-bottom: 1rem;
     margin-bottom: 10px;

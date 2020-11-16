@@ -189,6 +189,7 @@ form.addEventListener('change', e => {
         readUserChange(e.target.value, 'select')
     } else {
         getCountries()
+        
     }
 
 })
@@ -201,15 +202,6 @@ form.addEventListener('keyup', e => {
 })
 
 darkMode.addEventListener('click', () => {
-    //al cambiar de región se invierten los estilos, falta resolver
-    //FALTA
-    // for (const countries of sectionCountry) {
-    //     if(countries.classList.contains('country') && !countries.classList.contains('darkCountry')){
-    //         countries.classList.add('darkCountry')
-    //     }else if(countries.classList.contains('country') && countries.classList.contains('darkCountry')){
-    //         countries.classList.remove('darkCountry')
-    //     }
-    // }
     darkMode.dataset.boton = 'activado'
     document.body.classList.toggle('darkMode')
     title.classList.toggle('darktitle')
