@@ -208,9 +208,11 @@ darkMode.addEventListener('click', () => {
     darkMode.classList.toggle('darkboton')
     modalContent.classList.toggle('modal__dark')
     if (darkMode.classList.contains('darkboton')) {
+        country.style.color = '#fff'
         darkMode.dataset.boton = 'activado'
     } else {
         darkMode.dataset.boton = 'desactivado'
+        country.style.color = '#000'
     }
     iconbuscar.classList.toggle('buscarDark')
     if (iconoDark.className === 'far fa-sun') {

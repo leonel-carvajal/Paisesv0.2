@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb {
 .far {
     margin-left: -25px;
     margin-top: -20px;
-    color: #000;
+    color: orange;
     font-size: 1.5rem;
 }
 
@@ -318,4 +318,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--color-dark2);
     color: #fff;
     border: 1px solid #fff;
+}
+.letra{
+    color: #fff;
 }
